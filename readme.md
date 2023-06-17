@@ -2,13 +2,8 @@
 
 Contains my patched suckless.org stuff.
 
-<<<<<<< HEAD
-##Applied patches
-1. dwm
-=======
 ## Applied patches
 ### dwm
->>>>>>> f329d91b5d2ec13d4d47999e3946b0a04befb519
  - alpha (doesn't blur the systray)
  - alwayscenter
  - centerfirstwindow
