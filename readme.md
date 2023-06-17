@@ -2,7 +2,7 @@
 
 Contains my patched suckless.org stuff.
 
-##Installed patches
+##Applied patches
 1. dwm
  - alpha (doesn't blur the systray)
  - alwayscenter
