@@ -13,9 +13,9 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FiraCode Nerd Font Mono:size=11:antialias=true:autohint=true" };
-static const char dmenufont[]       = "FiraCode Nerd Font Mono:size=11:antialias=true:autohint=true";
-static unsigned int baralpha        = 0x60;
+static const char *fonts[]          = { "monospace:size=10" };
+static const char dmenufont[]       = "monospace:size=10";
+static unsigned int baralpha        = OPAQUE;
 static unsigned int borderalpha     = OPAQUE;
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -26,7 +26,7 @@ static const char col_black[]	    = "#000000";
 static const char col_white[]       = "#ffffff";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_white, col_black, col_black },
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
@@ -41,9 +41,9 @@ static const Rule rules[] = {
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  CenterThisWindow? monitor */
 	{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,         0,		 -1 },
 	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,         0,		 -1 },
-	{ "st",      NULL,     NULL,           0,         0,          1,           0,         1,		 -1 },
+	{ "st",      NULL,     NULL,           0,         0,          1,           0,         0,		 -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,         0,		 -1 }, /* xev */
-	{ "Thunar",  NULL,     NULL, 	       0,         0,          0,           1,         1,		 -1 },
+	{ "Thunar",  NULL,     NULL, 	       0,         0,          0,           1,         0,		 -1 },
 };
 
 /* layout(s) */
